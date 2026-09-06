@@ -1,0 +1,10 @@
+// SPDX-License-Identifier: GPL-2.0-or-later OR MIT
+
+/dts-v1/;
+
+#include "mt7981b-huastlink-hcg80.dtsi"
+
+/ {
+	model = "HUASTLINK HC-G80 MAXIS";
+	compatible = "huastlink,hcg80", "mediatek,mt7981b";
+};
