@@ -2125,7 +2125,7 @@ define Device/huastlink_hc-g80
   DEVICE_MODEL := HC-G80
   DEVICE_DTS := mt7981b-huastlink-hc-g80
   DEVICE_DTS_DIR := ../dts
-  DEVICE_PACKAGES := DEVICE_PACKAGES := kmod-mt7915e kmod-mt7981-firmware mt7981-wo-firmware \
+  DEVICE_PACKAGES := kmod-mt7915e kmod-mt7981-firmware mt7981-wo-firmware \
 	kmod-hwmon-gpiofan kmod-usb3 kmod-usb-net-qmi-wwan \
 	kmod-usb-net-cdc-mbim kmod-usb-serial-option
   UBINIZE_OPTS := -E 5
@@ -2144,7 +2144,7 @@ define Device/huastlink_hc-g80-ubootmod
   DEVICE_MODEL := HC-G80 (OpenWrt U-Boot layout)
   DEVICE_DTS := mt7981b-huastlink-hc-g80-ubootmod
   DEVICE_DTS_DIR := ../dts
-  DEVICE_PACKAGES := DEVICE_PACKAGES := kmod-mt7915e kmod-mt7981-firmware mt7981-wo-firmware \
+  DEVICE_PACKAGES := kmod-mt7915e kmod-mt7981-firmware mt7981-wo-firmware \
 	kmod-hwmon-gpiofan kmod-usb3 kmod-usb-net-qmi-wwan \
 	kmod-usb-net-cdc-mbim kmod-usb-serial-option
   UBINIZE_OPTS := -E 5
