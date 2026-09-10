@@ -47,7 +47,6 @@
 			color = <LED_COLOR_ID_GREEN>;
 			gpios = <&pio 25 GPIO_ACTIVE_LOW>;
 		};
-		
 		led-1 {
 			function = LED_FUNCTION_WLAN;
 			function-enumerator = <1>;
