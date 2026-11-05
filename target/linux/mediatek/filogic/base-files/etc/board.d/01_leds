@@ -152,6 +152,7 @@ hiveton,h5000m)
 	ucidef_set_led_netdev "wlan2g" "wlan-2ghz" "amber:wlan-2ghz" "phy0.0-ap0" "link tx rx"
 	ucidef_set_led_netdev "wlan5g" "wlan-5ghz" "blue:wlan-5ghz" "phy0.1-ap0" "link tx rx"
 	;;
+huastlink,hc-g60|\
 huastlink,hc-g80|\
 huastlink,hc-g80-ubootmod)
 	ucidef_set_led_netdev "wan" "WAN" "green:wan" "eth1" "link tx rx"

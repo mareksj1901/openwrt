@@ -2308,6 +2308,25 @@ define Device/huastlink_hc-g80-ubootmod
 endef
 TARGET_DEVICES += huastlink_hc-g80-ubootmod
 
+define Device/huastlink_hc-g60
+  DEVICE_VENDOR := Huastlink
+  DEVICE_MODEL := HC-G60
+  DEVICE_DTS := mt7981b-huastlink-hc-g60
+  DEVICE_DTS_DIR := ../dts
+  DEVICE_PACKAGES := kmod-mt7915e kmod-mt7981-firmware mt7981-wo-firmware \
+	kmod-hwmon-gpiofan kmod-usb3 kmod-usb-net-qmi-wwan \
+	kmod-usb-net-cdc-mbim kmod-usb-serial-option
+  UBINIZE_OPTS := -E 5
+  BLOCKSIZE := 128k
+  PAGESIZE := 2048
+  KERNEL_IN_UBI := 1
+  IMAGE_SIZE := 240128k
+  IMAGES += factory.bin
+  IMAGE/factory.bin := append-ubi | check-size $$(IMAGE_SIZE)
+  IMAGE/sysupgrade.bin := sysupgrade-tar | append-metadata
+endef
+TARGET_DEVICES += huastlink_hc-g60
+
 define Device/imou_hx21
   DEVICE_VENDOR := Imou
   DEVICE_MODEL := HX21
